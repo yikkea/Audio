@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Player</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial,sans-serif;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+h2{
+    color:#333;
+    margin-bottom:20px;
+}
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:#667eea;
+    color:white;
+    transition:0.3s;
+}
+button:hover{
+    transform:scale(1.08);
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <h2>🎵 Play Audio</h2>
+    <audio id="myAudio">
+        <source src="tts-output (1) (5).mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="document.getElementById('myAudio').play()">
+        ▶ Play
+    </button>
+</div>
+</body>
+</html>
